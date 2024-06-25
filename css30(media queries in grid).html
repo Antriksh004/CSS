@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries in css grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section sectionb aside'
+                'footer footer footer footer'
+            ;
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                display: block;
+                background-color: blueviolet;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+
+            }
+            span{
+                display: block;
+            }  
+        }
+
+        @media only screen and (max-width:500px) and (min-width:300px) {
+            body {
+                display: block;
+                background-color: darkgreen;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+
+            }
+            span{
+                display: block;
+            }    
+
+        }
+        
+
+        @media only screen and (max-width:800px) and (min-width:500px) {
+            body {
+                display: block;
+                background-color: rgb(185, 35, 72);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                display: block;
+                background-color: cyan;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section aside'
+                    'footer footer footer footer'
+                ;
+
+            }
+        }
+
+        .bdr {
+            border: 3px solid brown;
+            padding: 23px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar" class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span>Services</span>
+        </nav>
+        <section id="section" class="bdr">
+            <h2>This is all about media queries in css grid</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolor corrupti tempore repellendus vero laborum. Dolorem, modi. Officiis autem, eaque labore ipsum accusamus eius? Modi, sapiente! Veritatis, alias odio fugit unde error labore odit repudiandae, ratione voluptate distinctio iusto cum laudantium esse pariatur vero vitae tenetur nesciunt, expedita saepe? Alias qui recusandae quo vero blanditiis, eligendi nihil maiores corporis incidunt vitae iste quaerat, odit, aut doloribus inventore sapiente ea facere modi maxime et officiis nam totam non hic! Cumque, consequuntur accusamus aliquid itaque labore est deleniti quam sit neque vero, perspiciatis quis. Velit perspiciatis ex repudiandae ipsa recusandae quidem, nisi hic debitis illum amet doloribus possimus quo aliquam enim atque officia eaque sed ab assumenda quis doloremque vero? Odio est aut atque, earum beatae molestiae velit modi perferendis consectetur maiores?</p>
+        </section>
+        <aside id="aside" class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer id="aside" class="bdr">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sunt reiciendis molestiae veritatis placeat.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGNMENT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+
+        }
+
+        h1 {
+            color: yellow;
+            width: fit-content;
+            border-top: rgb(89, 172, 197) 10px solid;
+            border-right: rgb(174, 75, 204) 10px solid;
+            border-bottom: rgb(164, 165, 82) 10px solid;
+            border-left: rgb(197, 62, 175) 10px solid;
+            margin: 20px auto;
+        }
+
+        .container {
+            border: rgb(77, 100, 163) 10px solid;
+            background-color: #c4a8a8;
+            /* aligning the objects */
+            margin: auto;
+
+        }
+
+        .item {
+
+            border: rgb(77, 100, 163) 5px solid;
+            background-color: rgb(221, 207, 224);
+            margin: 12px 12px;
+            padding: 12px 16px;
+
+
+            /*aligning text for the html file*/
+            /* text-align: left;(center,right) */
+            text-align: justify;
+
+
+        }
+
+        .para {
+            font-family: cursive;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+
+
+
+
+        }
+
+        #computers {
+            float: right;
+            width: 48%;
+
+
+
+        }
+
+        #stationery {
+            width: 98%;
+            /* clear: left;
+            clear: right; */
+            clear: both;
+
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1>WELCOME TO E-STORE</h1>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima.
+                Necessitatibus facilis ratione iure maxime dolore quis eum, veniam, temporibus explicabo neque mollitia?
+                Vitae voluptas quis consectetur eligendi esse, pariatur non magni voluptatem nesciunt et, sed
+                praesentium neque officiis eius?</p>
+        </div>
+        <div id="computers" class="item">
+            <h3>COMPUTERS</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima.
+                Necessitatibus facilis ratione iure maxime dolore quis eum, veniam, temporibus explicabo neque mollitia?
+                Vitae voluptas quis consectetur eligendi esse, pariatur non magni voluptatem nesciunt et, sed
+                praesentium neque officiis eius? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+                quam, sit earum aliquam magni nam odit? Sapiente, libero non. Eaque illum corporis repellendus facere
+                tempore fuga? Eum sequi odit iste. lorem10</p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>stationery</h3>
+            <p id="stationerypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima.
+                Necessitatibus facilis ratione iure maxime dolore quis eum, veniam, temporibus explicabo neque mollitia?
+                Vitae voluptas quis consectetur eligendi esse, pariatur non magni voluptatem nesciunt et, sed
+                praesentium neque officiis eius?</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima.
+                Necessitatibus facilis ratione iure maxime dolore quis eum, veniam, temporibus explicabo neque mollitia?
+                Vitae voluptas quis consectetur eligendi esse, pariatur non magni voluptatem nesciunt et, sed
+                praesentium neque officiis eius?</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

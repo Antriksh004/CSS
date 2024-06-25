@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        
+        
+        /* This selector will only affect the p that are inside the division */
+        /* div p {
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        } */
+        
+        
+        /* this selector will affect only the p that are inside li inside div */
+        /* div li p {
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        } */
+        
+        
+        /* this selector will only affect the p whose direct parent is div */
+        /* div > p {
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        } */
+        
+        
+        /* this selector will only affect those paragraphs that have a preceeding div */
+        div + p {
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        }
+        
+        
+        /* this selector will affect only the input having types text */
+        /* input[type='text']{
+            border: 2px solid red;
+            background-color: black;
+            font-weight: bold;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <h1>There is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is another paragraph inside a list</p>
+                </li>
+                
+            </ul>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is the outermost paragraph</p>
+
+</body>
+
+</html>

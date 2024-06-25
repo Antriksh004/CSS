@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION BAR</title>
+    <style>
+        h1 {
+            color: #451da0;
+            margin-left: 20%;
+            font-family: cursive;
+        }
+
+        .navbar {
+            background-color: #a7b386;
+            border-radius: 50px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /*this oveflow auto will help in keeping the background even after the list is made to float*/
+        }
+
+        .navbar li {
+            float: left;
+            /*the moment you float the list it will overflow from from the parent i.e. ul in this case*/
+            list-style: none;
+            margin: 17px 17px;
+
+
+
+
+
+        }
+
+        .navbar li a {
+            padding: 5px;
+            text-decoration: none;
+            font-size: large;
+
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(212, 182, 182);
+            cursor: pointer;
+            color: rgb(44, 35, 129);
+            text-decoration: underline;
+
+
+        }
+
+        .searchbar {
+            float: right;
+            padding: 17px 40px;
+
+
+        }
+
+        .navbar input {
+            border: 4px rgb(0, 0, 0) solid;
+            border-radius: 10px;
+            padding: 4px;
+            width: 212px;
+        }
+
+        .company_intro {
+            color: white;
+            border: white 6px solid;
+            font-size: 25px;
+            margin-left: 24cm;
+            padding: 20px;
+            border-radius: 15px;
+            background-image: url(/photo4\(gridlines\).jpg);
+        }
+
+        .form_signup {
+            color: #abb010;
+            background-color: rgb(0, 0, 0);
+            font-size: large;
+            background-image: url(/photo4\(gridlines\).jpg);
+            margin-right: 14cm;
+            margin-top: -430px;
+            border: #b88fd4 5px solid;
+            padding: 10px;
+            border-radius: 32px;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(https://img.freepik.com/free-vector/colored-hacker-code-realistic-composition-with-person-creates-codes-hacking-stealing-information-vector-illustration_1284-18005.jpg?w=2000)">
+    <h1>WELCOME TO THE PAADU BOYS CORPORATION</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="searchbar"><input type="text" placeholder="&#128270 search this website"></div>
+            </ul>
+
+        </nav>
+    </header>
+    <div>
+        <p class="company_intro">This company was established in 2019 by four paadu boys. The aim of this company is to
+            spread togetherness amongst the friends who have the capability to become the next paadu boys.Along whith
+            this we also provide tech support such as deals in creation of new websites.</p>
+        <div class="company_intro"><span style="color: aquamarine;">Mobile No. <span
+                    style="color: rgb(153, 206, 165);">+010-3322432</span></span></div>
+    </div>
+    <div class="form_signup">
+        <form action="backend.php">
+
+            <div>
+                <!--div will create a division between the differnt fields-->
+                <br>
+                <!-- label creates a label for the input with the id -->
+                <label for="1001">Name:</label>
+                <input type="text" name="My_Name" id=1001>
+                <a href="https:/antriksh4codeydomain.blogspot.com" target="_blank" style="color: #abb010;">Click to view blog account</a>
+            </div>
+
+            <div>
+                <br>
+                <label for="1002">D.O.B.:</label>
+                <input type="date" name="date_html" id="1002">
+            </div>
+
+            <div>
+                <br>
+                Gender-Male:<input type="radio" name="gender" id="">Female:<input type="radio"
+                    name="gender">other:<input type="radio" name="gender">
+            </div>
+
+            <div>
+                <br>
+                <label for="1003">Email_id:</label>
+                <input type="email" name="My_email" id="1003">
+                <!--name wiil be used by the backend as a key for the value-->
+                <!-- creating a text area to write  -->
+                <br><br>
+                Why do you want to join paadu boys? <br><textarea name="" id="" cols="60" rows="4"></textarea>
+            </div>
+
+
+            <div>
+                <br>
+                Signature<input type="file" name="my_signature" id="">
+            </div>
+
+            <div>
+                <br>
+                <label for="1004">Preferred location</label>
+                <select name="preferred_location" id="1004">
+                    <option value="Select" selected>Select...</option>
+                    <option value="BANGALORE">BANGALORE</option>
+                    <option value="DELHI">DELHI</option>
+                    <option value="KOLKATA">KOLKATA</option>
+                    <option value="JAMMU AND KASHMIR">JAMMU AND KASHMIR</option>
+                </select>
+            </div>
+
+            <div>
+                <br>
+                press the button if you are a developer<input type="button" value="<>">
+            </div>
+            <div>
+                <br>
+                Are you a sigma<input type="checkbox" name="work_experience_responce" id="">
+            </div>
+
+            <div>
+                <br>
+                If you have any work experience,enter the no. of years you have worked for <input type="number" name=""
+                    id=""> mention the name of your last company<input type="text" name="" id=""
+                    value="e.g.,The Codey Domain">
+            </div>
+
+            <div>
+                <br>
+                <input type="submit" value="submit" name="submitted_value"><input type="reset" value="reset now"
+                    name="">
+            </div>
+    </div>
+
+</body>
+
+</html>

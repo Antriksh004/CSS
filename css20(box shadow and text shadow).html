@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <link rel="icon" href="/photo12(gym logo).JPG">
+    <style>
+        body{
+            background-color: rgb(199, 187, 214);
+        }
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+
+        }
+        header{
+            background-color: black;
+            color: blanchedalmond;
+            text-align: center;
+            margin: 15px 10px;
+            padding: 20px 0px;
+            font-size: 23px;
+            font-weight: bold;
+            box-shadow: 10px 10px 30px red;
+            /* box-shadow: -10px -10px red;negative dimension will change the shadow projection */
+        }
+
+        .card {
+            margin: 10px;
+            padding: 23px 13px;
+            width: 30%;
+            /* border: 2px red solid; */
+            background-color: blanchedalmond;
+            
+            /* box-shadow: horizontal vertical color*/
+            box-shadow: 10px 13px green;
+            /* box-shadow: -10px -13px green;negative dimension will change the shadow projection */
+            
+            /* box-shadow: horizontal vertical blur_radius color*/
+            box-shadow: 7px 5px 51px green;
+            
+            /* box-shadow: horizontal vertical blur_radius spread_radius color*/
+            box-shadow: 7px 5px 51px 10px green;
+
+            /* applying multiple box shadows */
+            
+            /* box-shadow: 2px 2px green,4px 4px red; */
+
+            
+        }
+        .card h2{
+            text-shadow: 21px -20px grey;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>BOX SHADOW AND TEXT SHADOW</header>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>JAVASCRIPT</h2>
+            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),[17] meaning that compiled Java code can run on all platforms that support Java without the need to recompile.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>PYTHON</h2>
+            <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>C C++</h2>
+            <p>C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

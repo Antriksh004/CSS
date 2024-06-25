@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in html</title>
+    <style>
+        /* this is the grouping selection */
+        p,h2 {color: yellow;background-color: black;}
+        /* single selection */
+        a {color: black; background-color: yellow; font-size: 2cm;border: 15px solid greenyellow;}
+        /* defining style for an id */
+        #spanone {color: aqua; background-color: black; border: 3px solid green;}
+        
+        /* defining style for classes */
+        .blackbg {background-color: black;}
+        .yellowfont{color: yellow;}
+        .redborder{border: 2px solid red;}
+    </style>
+</head>
+
+<body>
+    <h2 style="font-size: 2cm;border: 20px solid red">This is all about using selectors in html</h2>
+    <p>This sentence should be yellow in color with black background</p>
+    <a>This should be black in color with a yellow background and font size 2cm</a>
+    <div>
+        <span id="spanone">this is the sentence with id spanone</span>
+    </div>
+    <p class="blackbg yellowfont redborder">this sentence contains classes blackbg yellowfont and redborder</p>
+
+</body>
+
+</html>

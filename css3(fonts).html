@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts in html</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+    <style>
+        p{
+            font-family: cursive;/*font family is used to define the font style(e.g.cursive bookman old style..)*/
+        }
+        a{
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+            /*in the above example of font family styling the styles are prioritised in from left to right*/
+        }
+        /*web safe font styles:font styles that are pre available like the above*/
+        /* importing the non web safe font styles using chrome fonts */
+        
+        span{
+        font-family: "Sofia", sans-serif; 
+        font-size: 2cm; 
+        background-color: black; 
+        color: yellow;
+        border: red solid 5px;
+        line-height: 2em;/* line-height gives the line spacing...em=em times the parent font size*/
+        font-weight: bold;
+        font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="font-size: 2cm;border: 20px solid red">WORKING WITH FONTS</h2>
+    <p>This sentence should be yellow in color with black background</p>
+    <a>This should be black in color with a yellow background and font size 2cm</a>
+    
+
+    <div>
+        <span id="spanone">this is the sentence with id <span style="color: aquamarine;border: none;font-weight: lighter;">spanone</span></span>
+    </div>
+    <p class="blackbg yellowfont redborder">this sentence contains classes blackbg yellowfont and redborder</p>
+</body>
+</html>

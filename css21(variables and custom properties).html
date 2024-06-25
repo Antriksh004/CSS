@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSS VARIABLES/CUSTOM PROPERTIES</title>
+    <style>
+        :root{
+            --box-color: blanchedalmond;
+            --container1-color:rgb(105, 173, 105);
+            --primary-color:black;
+
+        }
+
+        .box{
+            
+            /* defining a variable with a color and using it in  bg color */
+            --box-color: blanchedalmond;
+            background-color: var(--box-color);
+            /* but these variables are defined just locally */
+            /* so to add the variables globally we have to use root directly in the style section */
+            
+            
+            width: 200px;
+            height: 200px;
+            /* background-color: blanchedalmond; */
+            border: 2px solid rgb(199, 191, 191);
+            margin: 10px;
+            box-shadow: 10px 10px 20px var(--primary-color);
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--container1-color);
+            margin: auto;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="container1">
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+    </div>
+    
+</body>
+</html>

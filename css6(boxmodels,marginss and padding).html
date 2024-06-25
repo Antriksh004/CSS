@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODELS</title>
+    <style>
+        *{
+            box-sizing: border-box;/*adjusts the padding or the margins with the width*/
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: blanchedalmond;
+            border: rgb(87, 35, 31) solid 5px;
+            border-radius: 30px;
+            width: 300px;
+
+            /* applying padding(duistance bw content and the border) in html */
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding: 50px 50px 50px 50px;/*padding=top right bottom left*/
+            padding: 50px 50px;/* padding: top/bottom right/left; */
+
+            
+
+            /* applying margins(distance between the borders) in html */
+            margin-left: 34px;
+            margin-right: 34px;
+            margin-top: 34px;
+            margin-bottom: 34px;
+            /* same syntax used in padding can be applied inmargin also */
+            
+            
+        }
+        .container2{background-color: blanchedalmond;
+            border: rgb(87, 35, 31) solid 5px;
+            border-radius: 30px;
+            width: 600px;
+            height: 400px;
+
+            /* applying padding(duistance bw content and the border) in html */
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding: 50px 50px 50px 50px;/*padding=top right bottom left*/
+            padding: 50px 50px;/* padding: top/bottom right/left; */
+
+            
+
+            /* applying margins(distance between the borders) in html */
+            margin-left: 347px;
+            margin-right: 34px;
+            margin-top: -780px;
+            margin-bottom: 34px;
+            
+
+        }
+    </style>
+</head>
+<body style="background-image: url(/photo4\(gridlines\).jpg);">
+    <div class="container">
+        <h3 style="font-style:italic;">this is the heading for the first division</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque atque ab dolorem quaerat? Minus, sed cumque ipsam mollitia ea architecto, vero quaerat alias error maxime, accusantaa sequi porro quas. Non ex nam molestias quibusdam, voluptates sunt! Animi, natus eligendi.</p>
+    </div>
+    <div class="container">
+        <h3>this is the heading for the first division</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque atque ab dolorem quaerat? Minus, sed cumque ipsam mollitia ea architecto, vero quaerat alias error maxime, accusantiu sequi porro quas. Non ex nam molestias quibusdam, voluptates sunt! Animi, natus eligendi.</p>
+    </div>
+    <div class="container2">
+        <h3>this is the heading for the first division</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque atque ab dolorem quaerat? Minus, sed cumque ipsam mollitia ea architecto, vero quaerat alias error maxime, accusantiu sequi porro quas. Non ex nam molestias quibusdam, voluptates sunt! Animi, natus eligendi.</p>
+    </div>
+</body>
+</html>
